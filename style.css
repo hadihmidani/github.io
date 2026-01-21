@@ -321,6 +321,42 @@ footer {
   color: #fff;
 }
 
+section {
+  padding: 6rem 0;
+}
+
+h3 {
+  margin-bottom: 2rem;
+}
+
+.project-grid,
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.project-card,
+.category-card {
+  background: rgba(255,255,255,0.03);
+  padding: 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover,
+.category-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.06);
+}
+
+.text-link {
+  color: #00dcff;
+  text-decoration: none;
+}
+
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -468,4 +504,17 @@ footer {
     gap: 1rem;
   }
 }
+
+@media (max-width: 600px) {
+  .social-icons a {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 

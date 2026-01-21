@@ -37,3 +37,10 @@ modal.addEventListener('click', (e) => {
     modal.style.display = 'none';
   }
 });
+
+document.querySelectorAll('[data-modal]').forEach(item => {
+  item.addEventListener('click', () => {
+    const modalId = item.getAttribute('data-modal');
+    openModal(modalId);
+  });
+});
