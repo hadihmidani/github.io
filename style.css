@@ -188,6 +188,44 @@ footer {
   color: #777;
 }
 
+.footer {
+  padding: 3rem 0;
+  background: #0b0d12;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #e6e6eb; /* off-white */
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00dcff; /* cyan */
+  transform: translateY(-2px) scale(1.05);
+}
+
+.social-icons a:focus-visible {
+  outline: 2px solid rgba(0, 220, 255, 0.4);
+  outline-offset: 4px;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
 .project-card {
   background: #11141b;
   padding: 18px;
