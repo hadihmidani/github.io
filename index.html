@@ -11,7 +11,7 @@
   <meta name="keywords" content="Hadi Hmidani, animation, motion design, visual storytelling, branding, illustration" />
   <meta name="author" content="Hadi Hmidani" />
 
-  <!-- Open Graph / Social Preview -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Hadi Hmidani | Animator & Visual Storyteller" />
   <meta property="og:description" content="Animation and visual design portfolio focused on storytelling, motion, and clear visual communication." />
   <meta property="og:type" content="website" />
@@ -24,11 +24,22 @@
   <meta name="twitter:description" content="Animation and motion design portfolio focused on visual storytelling and communication." />
   <meta name="twitter:image" content="https://hadihmidani.github.io/assets/preview.jpg" />
 
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
-	<script src="main.js" defer></script>
 
+  <!-- JS -->
+  <script src="main.js" defer></script>
 </head>
+
 <body>
+
+<!-- GLOBAL MODAL -->
+<div class="modal" id="globalModal">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
 
 <!-- HERO -->
 <header class="hero">
@@ -45,59 +56,56 @@
     <a href="assets/Hadi_Hmidani_CV.pdf" class="btn secondary" download>Download CV</a>
   </div>
 </header>
-
+	
 <!-- ABOUT -->
-<section class="about">
-  <h3>About</h3>
-  <p>
-    I work across animation and visual design, focusing on transforming ideas into clear and engaging visuals.
-    With experience in different styles and formats, I adapt my approach to each project’s needs, balancing creativity with effective communication.
-  </p>
+<section id="About" class="About">
+<h3>About</h3>
+	<p class="about-intro">
+	I work across animation and visual design, focusing on transforming ideas into clear and engaging visuals. With experience in different styles and formats, I adapt my approach to each project’s needs, balancing creativity with effective communication.
+	</p>	
 </section>
-
+	
 <!-- SOCIAL PROOF -->
-<section class="social-proof">
-  <h3>Selected Experience</h3>
-  <p>
-    Experience across different industries and project types,
-    collaborating with teams, studios, and clients to deliver clear and effective visual communication.
-  </p>
+<section id="social proof" class="social-proof">
+<h3>Selected Experience</h3>
+	<p>
+	Experience across different industries and project types, collaborating with teams, studios, and clients to deliver clear and effective visual communication.
+	</p>
 </section>
 	
 <!-- SKILLS -->
-<section class="skills">
-  <div class="skills-block">
-    <h3>Animation</h3>
-    <ul>
-      <li>2D Animation</li>
-      <li>3D Animation</li>
-      <li>Motion Graphics</li>
-      <li>Whiteboard Animation</li>
-    </ul>
-  </div>
-
-  <div class="skills-block">
-    <h3>Design</h3>
-    <ul>
-      <li>Branding & Logo Design</li>
-      <li>Social Media Content</li>
-      <li>Print Design</li>
-    </ul>
-  </div>
+<section id="skills" class="skills">
+	<div class="skills-block">
+	<h3>Animation</h3>
+		<ul>
+		<li>2D Animation</li>
+		<li>3D Animation</li>
+		<li>Motion Graphics</li>
+		<li>Whiteboard Animation</li>
+		</ul>
+	</div>
+	<div class="skills-block">
+	<h3>Design</h3>
+		<ul>
+		<li>Branding & Logo Design</li>
+		<li>Social Media Content</li>
+		<li>Print Design</li>
+		</ul>
+	</div>
 </section>
-
+	
 <!-- SHOWREEL -->
-<section id="showreel">
+<section id="showreel" class="showreel">
   <h3>Showreel</h3>
 
   <p class="showreel-intro">
-    A curated selection of animation and motion work focused on clarity, pacing, and visual storytelling.
-    The reel highlights a range of styles and approaches developed across different projects and contexts.
+    A curated selection of animation and motion work focused on clarity,
+    pacing, and visual storytelling across different styles and formats.
   </p>
-	
+
   <div class="video-wrapper">
     <iframe
-      src="https://player.vimeo.com/video/1043751533?title=0&byline=0&portrait=0&badge=0&autopause=1&controls=1"
+      src="https://player.vimeo.com/video/1043751533?title=0&byline=0&portrait=0&badge=0&controls=1"
       frameborder="0"
       allow="autoplay; fullscreen; picture-in-picture"
       allowfullscreen>
@@ -105,9 +113,11 @@
   </div>
 
   <p class="showreel-note">
-    Each project is driven by a specific idea, visual language, and purpose — adapting style and execution to fit the message.
+    Each project is designed to communicate an idea clearly,
+    adapting style and execution to serve the message.
   </p>
 </section>
+
 
 <!-- PROJECTS -->
 <section class="projects">
@@ -115,163 +125,237 @@
 
   <div class="project-grid">
 
-    <div class="project-card"
-     data-title="Brand Motion Identity"
-     data-type="Motion Graphics"
-     data-description="A motion-based visual identity developed to translate brand values into movement. The project focused on rhythm, consistency, and visual storytelling across different touchpoints."
-     data-image="assets/project1.jpg">
-     
-  		<img src="assets/project1.jpg" alt="Brand Motion Identity">
-  			<h4>Brand Motion Identity</h4>
-  				<span>Motion Graphics</span>
-  					<p>
-    				A motion-based visual identity designed to bring brand values to life through rhythm, movement, and visual consistency.
-  					</p>
+	<div class="project-card" data-modal="animation-explainer">
+	  <img src="assets/illu4.png" alt="">
+	  <h4>Explainer Animation</h4>
+	  <span>2D Animation</span>
 	</div>
 
-
-	<div class="project-card"
-    	 data-title="Explainer Animation"
-    	 data-type="2D Animation"
-    	 data-description="A clear and engaging explainer animation focused on simplifying complex ideas and delivering the message with clarity and flow."
-    	 data-image="assets/project2.jpg">
-     
-  		<img src="assets/project2.jpg" alt="Explainer Animation">
-  			<h4>Explainer Animation</h4>
-  				<span>2D Animation</span>
-  					<p>
-    				A clear and engaging explainer animation focused on simplifying complex ideas and delivering the message with clarity and flow.
-  					</p>
+	<div class="project-card" data-modal="motion-graphics">
+	  <img src="assets/illu5.png" alt="">
+	  <h4>Motion Graphics</h4>
+	  <span>2D Animation</span>
 	</div>
-	  
-	<div class="project-card"
-    	 data-title="Campaign Visuals"
-    	 data-type="Design & Motion"
-    	 data-description="A set of campaign visuals combining static design and motion to create a cohesive and impactful visual presence across platforms."
-    	 data-image="assets/project3.jpg">
-     
-  		<img src="assets/project3.jpg" alt="Campaign Visuals">
-  			<h4>Campaign Visuals</h4>
-  				<span>Design & Motion</span>
-  					<p>
-    				A set of campaign visuals combining static design and motion to create a cohesive and impactful visual presence across platforms.
-  					</p>
+
+	<div class="project-card" data-modal="whiteboard-animation">
+	  <img src="assets/illu6.png" alt="">
+	  <h4>Whiteboard Animation</h4>
+	  <span>2D Animation</span>
 	</div>
 
   </div>
 </section>
-	
-<!-- GRAPHIC DESIGN -->	
+
+<!-- BRANDING -->
 <section id="branding">
   <h3>Graphic Design & Branding</h3>
 
-  <div class="category-grid">
+  <div class="branding-grid">
+	  
+<div class="branding-card" data-modal="branding-logos">
+  <img src="assets/illu1.png" alt="Logo Design">
+  <h4>Logo Design</h4>
+</div>
 
-    <div class="category-card" data-modal="logos">
-      <h4>Logo Design</h4>
-      <p>Identity marks designed for clarity and longevity.</p>
-    </div>
+<div class="branding-card" data-modal="branding-logos">
+  <img src="assets/illu1.png" alt="Logo Design">
+  <h4>Social Media Content</h4>
+</div>
 
-    <div class="category-card" data-modal="brandingSystems">
-      <h4>Branding Systems</h4>
-      <p>Complete visual systems across digital and print.</p>
-    </div>
-
-    <div class="category-card" data-modal="socialDesign">
-      <h4>Social Media Visuals</h4>
-      <p>Campaign-based visuals and content formats.</p>
-    </div>
-
-    <div class="category-card" data-modal="print">
-      <h4>Print & Marketing</h4>
-      <p>Posters, brochures, and physical brand touchpoints.</p>
-    </div>
-
+<div class="branding-card" data-modal="branding-logos">
+  <img src="assets/illu1.png" alt="Logo Design">
+  <h4>Print Design</h4>
+</div>	  
+	  
   </div>
-</section>
-
-
-<!-- ILLUSTRATION & ARABIC TYPOGRAOHY -->
-<section class="illustration">
-  <h3>Arabic Calligraphy Illustrations</h3>
-  <p>
-    A personal exploration of Arabic typography and visual expression,
-    published as stock illustrations on Shutterstock.
-  </p>
-	
-	<a href="https://www.shutterstock.com/g/hadi+hmidani" target="_blank" class="text-link">
-		View on Shutterstock
-	</a>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <h3>Let’s Connect</h3>
-  <p>
-    Feel free to reach out for collaborations, projects, or opportunities.
-  </p>
+  <p>Feel free to reach out for collaborations, projects, or opportunities.</p>
 
   <div class="contact-buttons">
     <a href="mailto:hadi.hmedani@gmail.com" class="btn primary">Email Me</a>
   </div>
 </section>
+	
+<!-- MODAL TEMPLATES -->
+<template id="branding-logos">
 
-<!-- PROJECT MODAL -->
-<div class="modal" id="projectModal">
-  <div class="modal-content">
-    <span class="modal-close">&times;</span>
+  <h3>Logo Design</h3>
+  <p>Select a logo to explore its full brand identity.</p>
 
-    <img id="modalImage" src="" alt="">
-    <h4 id="modalTitle"></h4>
-    <span id="modalType"></span>
-    <p id="modalDescription"></p>
-  </div>
+
+<div class="logo-details">
+
+
 </div>
 
+
+	<div class="logo-grid">
+    <button class="logo-item" data-logo="logo1">
+		<div class="logo-frame">
+      <img src="assets/logos/meta-logo.png" alt="">
+		</div>
+    </button>
+
+    <button class="logo-item" data-logo="logo2">
+		<div class="logo-frame">
+      <img src="assets/logos/alshaheedpark-logo.png" alt="">
+		</div>
+	</button>
+
+    <button class="logo-item" data-logo="logo3">
+		<div class="logo-frame">		
+      <img src="assets/logos/bayanbotanicalgarden-logo.png" alt="">
+		</div>
+    </button>
+
+    <button class="logo-item" data-logo="logo4">
+		<div class="logo-frame">		
+      <img src="assets/logos/kuwaitcycling-logo.png" alt="">
+		</div>	
+    </button>
+
+    <button class="logo-item" data-logo="logo5">
+		<div class="logo-frame">
+      <img src="assets/logos/cycleague-logo.png" alt="">
+		</div>
+    </button>
+
+    <button class="logo-item" data-logo="logo6">
+		<div class="logo-frame">
+      <img src="assets/logos/runbike-logo.png" alt="">
+		</div>
+    </button>
+
+  </div>
+
+
+	
+	
+	<div class="logo-details-wrapper">
+
+    <div class="logo-detail" id="logo1">
+      <h4>Meta</h4>
+		<div class="gradient-line"></div>
+      <p>Minimal Arabic wordmark focused on balance.</p>
+    </div>
+
+    <div class="logo-detail" id="logo2">
+      <h4>AL-Shaheed Park</h4>
+		<div class="gradient-line"></div>
+      <p>Bold modern identity with strong contrast.</p>
+    </div>
+
+    <div class="logo-detail" id="logo3">
+      <h4>Bayan Botanical Garden</h4>
+		<div class="gradient-line"></div>		
+      <p>Playful visual language and typography.</p>
+    </div>
+	  
+    <div class="logo-detail" id="logo4">
+      <h4>kuwaitcycling</h4>
+		<div class="gradient-line"></div>
+      <p>Minimal Arabic wordmark focused on balance.</p>
+    </div>
+
+    <div class="logo-detail" id="logo5">
+      <h4>Cycleague</h4>
+		<div class="gradient-line"></div>
+      <p>Bold modern identity with strong contrast.</p>
+    </div>
+
+	<div class="logo-detail" id="logo6">
+      <h4>RunBike</h4>
+		<div class="gradient-line"></div>
+      <p>Playful visual language and typography.</p>
+    </div>
+
+  </div>
+
+</template>
+
+	
+<!-- ANIMATION MODALS -->
+<template id="animation-explainer">
+  <h3>Explainer Animation</h3>
+  <p>
+    Clear storytelling animation simplifying complex ideas through rhythm,
+    pacing, and visual hierarchy.
+  </p>
+
+  <div class="modal-media">
+    <video controls>
+      <source src="assets/explainer.mp4" type="video/mp4">
+    </video>
+  </div>
+</template>
+
+<template id="motion-graphics">
+  <h3>Motion Graphics</h3>
+  <p>
+    Clear storytelling animation simplifying complex ideas through rhythm,
+    pacing, and visual hierarchy.
+  </p>
+
+  <div class="modal-media">
+    <video controls>
+      <source src="assets/explainer.mp4" type="video/mp4">
+    </video>
+  </div>
+</template>
+	
+<template id="whiteboard-animation">
+  <h3>Whiteboard Animation</h3>
+  <p>
+    Clear storytelling animation simplifying complex ideas through rhythm,
+    pacing, and visual hierarchy.
+  </p>
+
+  <div class="modal-media">
+    <video controls>
+      <source src="assets/explainer.mp4" type="video/mp4">
+    </video>
+  </div>
+</template>
+
+
+	
 <!-- FOOTER -->
 <footer class="footer">
+
   <div class="social-icons">
-    
+
     <a href="https://linkedin.com/in/hadihmidani" target="_blank" aria-label="LinkedIn">
       <svg viewBox="0 0 24 24" class="icon">
-        <!-- LinkedIn SVG path -->
-		<svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-		  <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1s2.5 1.12 2.5 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.4 7.6 24 10 24 15v9h-5v-8c0-1.9-.04-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-5V8z"/>
-		</svg>
+        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1s2.5 1.12 2.5 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.4 7.6 24 10 24 15v9h-5v-8c0-1.9-.04-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-5V8z"/>
       </svg>
     </a>
 
     <a href="https://vimeo.com/hadihmidani" target="_blank" aria-label="Vimeo">
       <svg viewBox="0 0 24 24" class="icon">
-        <!-- Vimeo SVG path -->
-		<svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-		  <path d="M23.977 6.416c-.1 2.3-1.7 5.4-4.8 9.4-3.2 4.2-5.9 6.3-8.2 6.3-1.4 0-2.6-1.3-3.5-3.9l-1.9-6.8c-.7-2.6-1.5-3.9-2.3-3.9-.2 0-.9.4-2.1 1.2L0 7.1C1.3 6 2.6 4.9 3.9 3.8 5.7 2.2 7 1.3 7.8 1.2c1.8-.2 3 .9 3.6 3.4.6 2.7 1 4.6 1.2 5.6.7 3 1.4 4.5 2.2 4.5.6 0 1.6-1 2.8-3 .8-1.4 1.2-2.5 1.1-3.3-.1-1.3-1.2-2-3.3-2 .7-2.2 2.6-3.3 5.7-3.2 2.3.1 3.4 1.6 3.3 4.2z"/>
-		</svg>
+        <path d="M23.977 6.416c-.1 2.3-1.7 5.4-4.8 9.4-3.2 4.2-5.9 6.3-8.2 6.3-1.4 0-2.6-1.3-3.5-3.9l-1.9-6.8c-.7-2.6-1.5-3.9-2.3-3.9-.2 0-.9.4-2.1 1.2L0 7.1C1.3 6 2.6 4.9 3.9 3.8 5.7 2.2 7 1.3 7.8 1.2c1.8-.2 3 .9 3.6 3.4.6 2.7 1 4.6 1.2 5.6.7 3 1.4 4.5 2.2 4.5.6 0 1.6-1 2.8-3 .8-1.4 1.2-2.5 1.1-3.3-.1-1.3-1.2-2-3.3-2 .7-2.2 2.6-3.3 5.7-3.2 2.3.1 3.4 1.6 3.3 4.2z"/>
       </svg>
     </a>
 
     <a href="https://instagram.com/hadihmidani" target="_blank" aria-label="Instagram">
       <svg viewBox="0 0 24 24" class="icon">
-        <!-- Instagram SVG path -->
-		<svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-		  <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 7.3A2.8 2.8 0 1 1 14.8 12 2.8 2.8 0 0 1 12 14.8zM17.8 6.2a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z"/>
-		</svg>
+        <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10z"/>
       </svg>
     </a>
 
-    <a href="https://shutterstock.com/g/hadi+hmidani" target="_blank" aria-label="Shutterstock Portfolio">
+    <a href="https://shutterstock.com/g/hadi+hmidani" target="_blank" aria-label="Shutterstock">
       <svg viewBox="0 0 24 24" class="icon">
-        <!-- Shutterstock SVG path -->
-		<svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-		  <path d="M5.2 14.7c.5 2.2 2.4 3.7 5.1 3.7 3 0 4.8-1.6 4.8-3.9 0-2-1.1-3-3.7-3.6l-1.3-.3c-1.4-.3-2-.8-2-1.6 0-.9.8-1.5 2.1-1.5 1.2 0 2 .6 2.3 1.6h2.9C15.1 7 13.4 5.6 10.9 5.6c-2.9 0-4.7 1.6-4.7 3.9 0 1.9 1.1 3 3.6 3.6l1.3.3c1.5.3 2.1.8 2.1 1.6 0 .9-.9 1.5-2.2 1.5-1.4 0-2.4-.6-2.7-1.8H5.2z"/>
-		</svg>
+        <path d="M5.2 14.7c.5 2.2 2.4 3.7 5.1 3.7 3 0 4.8-1.6 4.8-3.9 0-2-1.1-3-3.7-3.6l-1.3-.3c-1.4-.3-2-.8-2-1.6 0-.9.8-1.5 2.1-1.5 1.2 0 2 .6 2.3 1.6h2.9C15.1 7 13.4 5.6 10.9 5.6c-2.9 0-4.7 1.6-4.7 3.9 0 1.9 1.1 3 3.6 3.6l1.3.3c1.5.3 2.1.8 2.1 1.6 0 .9-.9 1.5-2.2 1.5-1.4 0-2.4-.6-2.7-1.8H5.2z"/>
       </svg>
     </a>
 
   </div>
+
   <p>© 2026 Hadi Hmidani — All rights reserved</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
